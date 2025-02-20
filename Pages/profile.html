@@ -54,8 +54,7 @@
                     <a href="#" class="px-6 py-4 flex items-center gap-2">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 12.75C9 14.8211 10.6789 16.5 12.75 16.5C14.8211 16.5 16.5 14.8211 16.5 12.75C16.5 10.6789 14.8211 9 12.75 9C10.6789 9 9 10.6789 9 12.75ZM9 12.75C9 11.9056 9.27907 11.1264 9.75 10.4996V3.75M9 12.75C9 13.369 9.14998 13.953 9.4156 14.4676C8.78375 15.0013 7.32438 15.375 5.625 15.375C3.34683 15.375 1.5 14.7034 1.5 13.875V3.75M9.75 3.75C9.75 4.57843 7.90317 5.25 5.625 5.25C3.34683 5.25 1.5 4.57843 1.5 3.75M9.75 3.75C9.75 2.92157 7.90317 2.25 5.625 2.25C3.34683 2.25 1.5 2.92157 1.5 3.75M1.5 10.5C1.5 11.3284 3.34683 12 5.625 12C7.26675 12 8.68449 11.6512 9.34848 11.1463M9.75 7.125C9.75 7.95343 7.90317 8.625 5.625 8.625C3.34683 8.625 1.5 7.95343 1.5 7.125" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            
+                        </svg>                            
                         <span>Финансы</span>
                     </a>
                     <a href="#" class="px-6 py-4 flex items-center gap-2">
@@ -80,10 +79,198 @@
                 </div>
                 <p class="text-3xl leading-[36px] font-semibold mt-1">Профиль пациента</p>
                 <div class="flex flex-col gap-10 text-[15px] leading-[18px]">
-                    
+                    <div class="flex flex-col gap-6">
+                        <div class="flex gap-9">
+                            <div class="relative">
+                                <img src="../Assets/Images/profile/logo.png" alt="">
+                                <button class="flex items-center justify-center w-[34px] h-[34px] rounded-full bg-[#007EC2] border border-white absolute bottom-0 right-0 cursor-pointer">
+                                    <img src="../Assets/Images/profile/camera.png" alt="">
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-4 justify-between h-full grow">
+                                <button class="py-2 px-3 test-sm leading-[19.1px] flex items-center gap-2 rounded-[9px] w-fit border border-[#007EC2] self-end">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.7085 3.16668H5.3835C4.05337 3.16668 3.38831 3.16668 2.88027 3.42554C2.43338 3.65324 2.07005 4.01657 1.84236 4.46346C1.5835 4.9715 1.5835 5.63656 1.5835 6.96668V13.6167C1.5835 14.9468 1.5835 15.6119 1.84236 16.1199C2.07005 16.5668 2.43338 16.9301 2.88027 17.1578C3.38831 17.4167 4.05337 17.4167 5.3835 17.4167H12.0335C13.3636 17.4167 14.0287 17.4167 14.5367 17.1578C14.9836 16.9301 15.3469 16.5668 15.5746 16.1199C15.8335 15.6119 15.8335 14.9468 15.8335 13.6167V10.2917M6.33347 12.6667H7.65915C8.04642 12.6667 8.24006 12.6667 8.42228 12.6229C8.58384 12.5841 8.73828 12.5202 8.87995 12.4334C9.03973 12.3354 9.17665 12.1985 9.45049 11.9247L17.021 4.35418C17.6768 3.69835 17.6768 2.63502 17.021 1.97918C16.3652 1.32335 15.3018 1.32334 14.646 1.97918L7.07547 9.54969C6.80163 9.82353 6.66471 9.96045 6.5668 10.1202C6.47998 10.2619 6.41601 10.4163 6.37722 10.5779C6.33347 10.7601 6.33347 10.9538 6.33347 11.341V12.6667Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                    <span>Редактировать</span>
+                                </button>
+                                <div class="grid grid-cols-3 gap-6">
+                                    <div class="flex flex-col gap-2">
+                                        <p class="font-medium">Имя</p>
+                                        <input disabled value="Александр" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <p class="font-medium">Фамилия</p>
+                                        <input disabled value="Смирнов" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <p class="font-medium">Отчество (при наличии)</p>
+                                        <input disabled value="Алексеевич" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 w-full">
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Дата рождения</p>
+                                <div class="relative w-full">
+                                    <input disabled value="20.12.2000" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                    <button class="absolute top-1/2 -translate-y-1/2 right-4 cursor-pointer">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.75 7.5H2.25M12 1.5V4.5M6 1.5V4.5M5.85 16.5H12.15C13.4101 16.5 14.0402 16.5 14.5215 16.2548C14.9448 16.039 15.289 15.6948 15.5048 15.2715C15.75 14.7902 15.75 14.1601 15.75 12.9V6.6C15.75 5.33988 15.75 4.70982 15.5048 4.22852C15.289 3.80516 14.9448 3.46095 14.5215 3.24524C14.0402 3 13.4101 3 12.15 3H5.85C4.58988 3 3.95982 3 3.47852 3.24524C3.05516 3.46095 2.71095 3.80516 2.49524 4.22852C2.25 4.70982 2.25 5.33988 2.25 6.6V12.9C2.25 14.1601 2.25 14.7902 2.49524 15.2715C2.71095 15.6948 3.05516 16.039 3.47852 16.2548C3.95982 16.5 4.58988 16.5 5.85 16.5Z" stroke="#202027" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                                                       
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Номер телефона</p>
+                                <input disabled value="+7 (999) 999-99-99" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">E-mail</p>
+                                <input disabled value="pochtapochta@gmail.com" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Город проживания</p>
+                                <input disabled value="г. Москва" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Район проживания</p>
+                                <input disabled value="Басманный район" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Адрес проживания</p>
+                                <input disabled value="Аптекарский пер., д.52, к.4, кв.241" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Гражданство</p>
+                                <input disabled value="Российская Федерация" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Национальность</p>
+                                <input disabled value="Русский" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Язык</p>
+                                <input disabled value="Русский, английский" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <p class="text-xl leading-[24px] font-medium">Данные ближайших родственников или контактных лиц в экстренных ситуациях</p>
+                        <div class="grid grid-cols-3 gap-6 w-full">
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Имя</p>
+                                <input disabled value="Алексей" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Фамилия</p>
+                                <input disabled value="Смирнов" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Отчество (при наличии)</p>
+                                <input disabled value="Максимович" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Кем приходится</p>
+                                <input disabled value="Отец" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="font-medium">Номер телефона</p>
+                                <input disabled value="+7 (999) 999-99-99" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <p class="text-xl leading-[24px] font-medium">Документы</p>
+                        <div class="grid grid-cols-3 gap-6 font-semibold text-[11px] leading-[13.2px]">
+                            <a href="#" class="flex items-center gap-2 pl-4 pr-[58px] py-2.5 rounded-[12px] bg-[#36C7B61A]">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6668 3.02606V8.53345C18.6668 9.28019 18.6668 9.65355 18.8122 9.93877C18.94 10.1897 19.144 10.3936 19.3948 10.5215C19.6801 10.6668 20.0534 10.6668 20.8002 10.6668H26.3075M21.3335 17.3334H10.6668M21.3335 22.6667H10.6668M13.3335 12H10.6668M18.6668 2.66669H11.7335C9.49329 2.66669 8.37318 2.66669 7.51753 3.10266C6.76489 3.48615 6.15296 4.09808 5.76947 4.85073C5.3335 5.70637 5.3335 6.82648 5.3335 9.06669V22.9334C5.3335 25.1736 5.3335 26.2937 5.76947 27.1493C6.15296 27.902 6.76489 28.5139 7.51753 28.8974C8.37318 29.3334 9.49329 29.3334 11.7335 29.3334H20.2668C22.507 29.3334 23.6271 29.3334 24.4828 28.8974C25.2354 28.5139 25.8474 27.902 26.2309 27.1493C26.6668 26.2937 26.6668 25.1736 26.6668 22.9334V10.6667L18.6668 2.66669Z" stroke="#111111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Согласие на обработку данных и информированные согласия</span> 
+                            </a>
+                            <a href="#" class="flex items-center gap-2 pl-4 pr-[58px] py-2.5 rounded-[12px] bg-[#36C7B61A]">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6668 3.02606V8.53345C18.6668 9.28019 18.6668 9.65355 18.8122 9.93877C18.94 10.1897 19.144 10.3936 19.3948 10.5215C19.6801 10.6668 20.0534 10.6668 20.8002 10.6668H26.3075M21.3335 17.3334H10.6668M21.3335 22.6667H10.6668M13.3335 12H10.6668M18.6668 2.66669H11.7335C9.49329 2.66669 8.37318 2.66669 7.51753 3.10266C6.76489 3.48615 6.15296 4.09808 5.76947 4.85073C5.3335 5.70637 5.3335 6.82648 5.3335 9.06669V22.9334C5.3335 25.1736 5.3335 26.2937 5.76947 27.1493C6.15296 27.902 6.76489 28.5139 7.51753 28.8974C8.37318 29.3334 9.49329 29.3334 11.7335 29.3334H20.2668C22.507 29.3334 23.6271 29.3334 24.4828 28.8974C25.2354 28.5139 25.8474 27.902 26.2309 27.1493C26.6668 26.2937 26.6668 25.1736 26.6668 22.9334V10.6667L18.6668 2.66669Z" stroke="#111111" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Электронное согласия на использование медицинских данных</span> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <p class="text-xl leading-[24px] font-medium">Медицинская карта пациента</p>
+                        <div id="tabs" class="flex flex-col gap-5">
+                            <ul class="w-fit rounded-[32px] overflow-hidden shadow-[0px_0px_20px_0px_#0000001A] flex items-center">
+                                <li><a href="#tabs-1" class="px-5 py-3 block">Общие сведения</a></li>
+                                <li><a href="#tabs-2" class="px-5 py-3 block">Заболевания</a></li>
+                                <li><a href="#tabs-3" class="px-5 py-3 block">Операции</a></li>
+                                <li><a href="#tabs-4" class="px-5 py-3 block">План лечения и назначение медикаментов / процедур</a></li>
+                            </ul>
+                            <div id="tabs-1" class="grid grid-cols-4 gap-x-6 gap-y-5">
+                                <div class="flex flex-col gap-2">
+                                    <p class="font-medium">Рост, см</p>
+                                    <input disabled value="51" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="font-medium">Вес, г</p>
+                                    <input disabled value="3 400" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="font-medium">Группа крови, резус-фактор</p>
+                                    <input disabled value="1+" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="font-medium">Аллергии</p>
+                                    <input disabled value="Нет" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                </div>
+                                <div class="flex flex-col gap-2 col-span-2">
+                                    <p class="font-medium">Перенесенные инфекционные заболевания</p>
+                                    <input disabled value="Нет" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                </div>
+                                <div class="flex flex-col gap-2 col-span-2">
+                                    <p class="font-medium">Настоящий диагноз</p>
+                                    <input disabled value="Пневмония" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
+                                </div>
+                            </div>
+                            <div id="tabs-2" class="flex flex-col gap-6 text-[15px] leading-[18px] w-full">
+                                <div class="flex flex-col gap-4 w-full">
+                                    <p class="text-[18px] leading-[21.6px] font-medium">Текущее заболевание</p>
+                                    <div class="flex flex-col gap-2 px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                        <p class="font-medium">Наименование</p>
+                                        <p>Пневмония (субсегментарная)</p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4 w-full">
+                                    <p class="text-[18px] leading-[21.6px] font-medium">Хронические заболевания</p>
+                                    <div class="flex items-center gap-[123px] px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Наименование</p>
+                                            <p>Хронический бронхит (первичный, катаральный)</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Наименование</p>
+                                            <p>15.08.2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4 w-full">
+                                    <p class="text-[18px] leading-[21.6px] font-medium">Онкозаболевания</p>
+                                    <div class="flex flex-col gap-2 px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                        <p class="font-medium">Наименование</p>
+                                        <p>Нет</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
 </body>
 </html>

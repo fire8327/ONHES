@@ -5,3 +5,8 @@ $(".dropdown").each((i, el) => {
         $(el).find(".dropdownList").toggle(500)
     })
 })
+
+/* tabs */
+$( function() {
+    $( "#tabs" ).tabs();
+} );

@@ -6,3 +6,9 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+.ui-tabs-active > a {
+    background: #36C7B6;
+    color: white;
+    border-radius: 32px;
+}
