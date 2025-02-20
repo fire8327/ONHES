@@ -522,8 +522,20 @@
   .collapse {
     visibility: collapse;
   }
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .left-11 {
+    left: calc(var(--spacing) * 11);
   }
   .container {
     width: 100%;
@@ -618,6 +630,14 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .rotate-45 {
     rotate: 45deg;
   }
@@ -681,6 +701,9 @@
   .rounded-\[\#FFFFFF\] {
     border-radius: #FFFFFF;
   }
+  .rounded-\[9ox\] {
+    border-radius: 9ox;
+  }
   .rounded-\[9px\] {
     border-radius: 9px;
   }
@@ -690,6 +713,9 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-\[\#007EC2\] {
+    background-color: #007EC2;
   }
   .bg-\[\#007EC22B\] {
     background-color: #007EC22B;
@@ -757,6 +783,12 @@
   .py-\[30px\] {
     padding-block: 30px;
   }
+  .pr-9 {
+    padding-right: calc(var(--spacing) * 9);
+  }
+  .pl-\[456px\] {
+    padding-left: 456px;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -778,6 +810,10 @@
   }
   .text-\[17px\] {
     font-size: 17px;
+  }
+  .leading-0 {
+    --tw-leading: calc(var(--spacing) * 0);
+    line-height: calc(var(--spacing) * 0);
   }
   .leading-\[18px\] {
     --tw-leading: 18px;
@@ -881,6 +917,21 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-rotate-x {
   syntax: "*";
