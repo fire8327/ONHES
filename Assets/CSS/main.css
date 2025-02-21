@@ -986,6 +986,9 @@
   .gap-11 {
     gap: calc(var(--spacing) * 11);
   }
+  .gap-\[5px\] {
+    gap: 5px;
+  }
   .gap-\[23px\] {
     gap: 23px;
   }
@@ -1048,6 +1051,9 @@
   }
   .rounded-\[9px\] {
     border-radius: 9px;
+  }
+  .rounded-\[9x\] {
+    border-radius: 9x;
   }
   .rounded-\[12px\] {
     border-radius: 12px;
@@ -1120,6 +1126,9 @@
   .bg-\[\#FF0066\] {
     background-color: #FF0066;
   }
+  .bg-\[\#FF973C29\] {
+    background-color: #FF973C29;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -1156,6 +1165,12 @@
   .p-\[30px\] {
     padding: 30px;
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -1176,6 +1191,9 @@
   }
   .px-\[5\] {
     padding-inline: 5;
+  }
+  .px-\[26px\] {
+    padding-inline: 26px;
   }
   .px-\[30px\] {
     padding-inline: 30px;
@@ -1332,6 +1350,10 @@
   .leading-\[36px\] {
     --tw-leading: 36px;
     line-height: 36px;
+  }
+  .leading-\[288\.8px\] {
+    --tw-leading: 288.8px;
+    line-height: 288.8px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
