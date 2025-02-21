@@ -764,11 +764,20 @@
   .w-\[126px\] {
     width: 126px;
   }
+  .w-\[247px\] {
+    width: 247px;
+  }
   .w-fit {
     width: fit-content;
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[135px\] {
+    max-width: 135px;
+  }
+  .max-w-\[150px\] {
+    max-width: 150px;
   }
   .max-w-\[176px\] {
     max-width: 176px;
@@ -1068,6 +1077,9 @@
   .pl-\[456px\] {
     padding-left: 456px;
   }
+  .text-center {
+    text-align: center;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1126,6 +1138,10 @@
   .leading-\[26\.4px\] {
     --tw-leading: 26.4px;
     line-height: 26.4px;
+  }
+  .leading-\[28\.8px\] {
+    --tw-leading: 28.8px;
+    line-height: 28.8px;
   }
   .leading-\[36px\] {
     --tw-leading: 36px;
