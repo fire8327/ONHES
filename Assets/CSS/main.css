@@ -542,6 +542,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .-top-14 {
+    top: calc(var(--spacing) * -14);
+  }
   .top-1 {
     top: calc(var(--spacing) * 1);
   }
@@ -587,11 +590,20 @@
   .-bottom-0 {
     bottom: calc(var(--spacing) * -0);
   }
+  .-bottom-1 {
+    bottom: calc(var(--spacing) * -1);
+  }
+  .-bottom-1\.5 {
+    bottom: calc(var(--spacing) * -1.5);
+  }
   .-bottom-3 {
     bottom: calc(var(--spacing) * -3);
   }
   .-bottom-3\.5 {
     bottom: calc(var(--spacing) * -3.5);
+  }
+  .-bottom-\[5px\] {
+    bottom: calc(5px * -1);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -605,11 +617,17 @@
   .bottom-3\.5 {
     bottom: calc(var(--spacing) * 3.5);
   }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .left-1 {
     left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-5 {
+    left: calc(var(--spacing) * 5);
   }
   .left-11 {
     left: calc(var(--spacing) * 11);
@@ -755,20 +773,56 @@
   .h-\[63px\] {
     height: 63px;
   }
+  .h-\[89px\] {
+    height: 89px;
+  }
   .h-\[100px\] {
     height: 100px;
   }
   .h-\[129px\] {
     height: 129px;
   }
+  .h-\[131px\] {
+    height: 131px;
+  }
+  .h-\[131ypx\] {
+    height: 131ypx;
+  }
+  .h-\[144px\] {
+    height: 144px;
+  }
   .h-\[149px\] {
     height: 149px;
+  }
+  .h-\[155px\] {
+    height: 155px;
+  }
+  .h-\[164px\] {
+    height: 164px;
+  }
+  .h-\[175px\] {
+    height: 175px;
+  }
+  .h-\[213px\] {
+    height: 213px;
+  }
+  .h-\[222px\] {
+    height: 222px;
+  }
+  .h-\[237px\] {
+    height: 237px;
+  }
+  .h-\[251px\] {
+    height: 251px;
   }
   .h-\[530px\] {
     height: 530px;
   }
   .h-\[600px\] {
     height: 600px;
+  }
+  .h-\[px\] {
+    height: px;
   }
   .h-fit {
     height: fit-content;
@@ -845,6 +899,9 @@
   .w-\[56\%\] {
     width: 56%;
   }
+  .w-\[58px\] {
+    width: 58px;
+  }
   .w-\[68\%\] {
     width: 68%;
   }
@@ -914,8 +971,17 @@
   .max-w-\[1200px\] {
     max-width: 1200px;
   }
+  .min-w-0 {
+    min-width: calc(var(--spacing) * 0);
+  }
+  .min-w-\[58px\] {
+    min-width: 58px;
+  }
   .min-w-\[75px\] {
     min-width: 75px;
+  }
+  .min-w-\[95px\] {
+    min-width: 95px;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1191,6 +1257,9 @@
   .bg-\[\#36C7B666\] {
     background-color: #36C7B666;
   }
+  .bg-\[\#566166\] {
+    background-color: #566166;
+  }
   .bg-\[\#909090\] {
     background-color: #909090;
   }
@@ -1211,6 +1280,9 @@
   }
   .bg-\[\#E0E0E0\] {
     background-color: #E0E0E0;
+  }
+  .bg-\[\#E5E5E5\] {
+    background-color: #E5E5E5;
   }
   .bg-\[\#F2F5F8\] {
     background-color: #F2F5F8;
@@ -1512,6 +1584,12 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .whitespace-normal {
+    white-space: normal;
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
   .text-\[\#007EC2\] {
     color: #007EC2;
   }
@@ -1550,6 +1628,12 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .opacity-10 {
+    opacity: 10%;
+  }
+  .opacity-100 {
+    opacity: 100%;
+  }
   .shadow-\[0px_0px_10px_0px_\#0000001A\] {
     --tw-shadow: 0px 0px 10px 0px var(--tw-shadow-color, #0000001A);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1581,6 +1665,20 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
+  }
+  .group-hover\:bg-\[\#FF00664D\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: #FF00664D;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
   }
   .peer-checked\:bg-\[\#36C7B6\] {
     &:is(:where(.peer):checked ~ *) {
@@ -1650,10 +1748,29 @@
       background-color: var(--color-white);
     }
   }
+  .hover\:bg-\[\#FF00664D\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #FF00664D;
+      }
+    }
+  }
+  .hover\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
   .focus\:outline-none {
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .active\:bg-\[\#FF00664D\] {
+    &:active {
+      background-color: #FF00664D;
     }
   }
 }
