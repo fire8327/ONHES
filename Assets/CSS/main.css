@@ -593,6 +593,9 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -662,6 +665,9 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
@@ -715,6 +721,9 @@
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-11 {
     width: calc(var(--spacing) * 11);
@@ -832,6 +841,9 @@
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
   .grid-cols-\[52\%_48\%\] {
     grid-template-columns: 52% 48%;
   }
@@ -913,6 +925,9 @@
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
+  .gap-x-5 {
+    column-gap: calc(var(--spacing) * 5);
+  }
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6);
   }
@@ -928,8 +943,14 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-\[3px\] {
     border-radius: 3px;
+  }
+  .rounded-\[8px\] {
+    border-radius: 8px;
   }
   .rounded-\[9px\] {
     border-radius: 9px;
@@ -972,6 +993,9 @@
   .bg-\[\#007EC22B\] {
     background-color: #007EC22B;
   }
+  .bg-\[\#8C8C8C\] {
+    background-color: #8C8C8C;
+  }
   .bg-\[\#9AE3DB45\] {
     background-color: #9AE3DB45;
   }
@@ -983,6 +1007,9 @@
   }
   .bg-\[\#C1C1C1\] {
     background-color: #C1C1C1;
+  }
+  .bg-\[\#DEDEDE\] {
+    background-color: #DEDEDE;
   }
   .bg-\[\#E0E0E0\] {
     background-color: #E0E0E0;
@@ -1038,8 +1065,14 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-\[5\] {
+    padding-inline: 5;
+  }
   .px-\[30px\] {
     padding-inline: 30px;
+  }
+  .px-\[50px\] {
+    padding-inline: 50px;
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -1064,6 +1097,9 @@
   }
   .py-\[30px\] {
     padding-block: 30px;
+  }
+  .pt-\[22px\] {
+    padding-top: 22px;
   }
   .pr-9 {
     padding-right: calc(var(--spacing) * 9);
@@ -1159,6 +1195,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#858585\] {
+    color: #858585;
+  }
   .text-\[\#FF1F1F\] {
     color: #FF1F1F;
   }
@@ -1216,6 +1255,54 @@
   .placeholder\:text-\[\#5E5E5E\] {
     &::placeholder {
       color: #5E5E5E;
+    }
+  }
+  .after\:absolute {
+    &::after {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .after\:top-\[2px\] {
+    &::after {
+      content: var(--tw-content);
+      top: 2px;
+    }
+  }
+  .after\:bottom-1 {
+    &::after {
+      content: var(--tw-content);
+      bottom: calc(var(--spacing) * 1);
+    }
+  }
+  .after\:h-\[3px\] {
+    &::after {
+      content: var(--tw-content);
+      height: 3px;
+    }
+  }
+  .after\:w-\[22px\] {
+    &::after {
+      content: var(--tw-content);
+      width: 22px;
+    }
+  }
+  .after\:rounded-\[2px\] {
+    &::after {
+      content: var(--tw-content);
+      border-radius: 2px;
+    }
+  }
+  .after\:bg-\[\#007EC2\] {
+    &::after {
+      content: var(--tw-content);
+      background-color: #007EC2;
+    }
+  }
+  .after\:bg-white {
+    &::after {
+      content: var(--tw-content);
+      background-color: var(--color-white);
     }
   }
 }
@@ -1452,5 +1539,10 @@
 }
 @property --tw-duration {
   syntax: "*";
+  inherits: false;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
   inherits: false;
 }
