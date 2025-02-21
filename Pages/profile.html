@@ -200,7 +200,7 @@
                     </div>
                     <div class="flex flex-col gap-5">
                         <p class="text-xl leading-[24px] font-medium">Медицинская карта пациента</p>
-                        <div id="tabs" class="flex flex-col gap-5">
+                        <div id="tabs" class="flex flex-col gap-5 text-[15px] leading-[18px] w-full">
                             <ul class="w-fit rounded-[32px] overflow-hidden shadow-[0px_0px_20px_0px_#0000001A] flex items-center">
                                 <li><a href="#tabs-1" class="px-5 py-3 block">Общие сведения</a></li>
                                 <li><a href="#tabs-2" class="px-5 py-3 block">Заболевания</a></li>
@@ -233,7 +233,7 @@
                                     <input disabled value="Пневмония" type="text" class="w-full px-4 py-3 rounded-[20px] shadow-[0px_0px_20px_0px_#0000001A] placeholder:text-[#5E5E5E]">
                                 </div>
                             </div>
-                            <div id="tabs-2" class="flex flex-col gap-6 text-[15px] leading-[18px] w-full">
+                            <div id="tabs-2" class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-4 w-full">
                                     <p class="text-[18px] leading-[21.6px] font-medium">Текущее заболевание</p>
                                     <div class="flex flex-col gap-2 px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
@@ -243,7 +243,7 @@
                                 </div>
                                 <div class="flex flex-col gap-4 w-full">
                                     <p class="text-[18px] leading-[21.6px] font-medium">Хронические заболевания</p>
-                                    <div class="flex items-center gap-[123px] px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                    <div class="flex items-center justify-between px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
                                         <div class="flex flex-col gap-2">
                                             <p class="font-medium">Наименование</p>
                                             <p>Хронический бронхит (первичный, катаральный)</p>
@@ -259,6 +259,74 @@
                                     <div class="flex flex-col gap-2 px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
                                         <p class="font-medium">Наименование</p>
                                         <p>Нет</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-3" class="flex flex-col gap-6">
+                                <div class="flex flex-col gap-4 w-full">
+                                    <p class="text-[18px] leading-[21.6px] font-medium">История госпитализаций</p>
+                                    <div class="flex items-center justify-between px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Наименование</p>
+                                            <p>Трансплантация ортотопическая</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Дата проведения</p>
+                                            <p>14.04.2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4 w-full">
+                                    <p class="text-[18px] leading-[21.6px] font-medium">История госпитализаций</p>
+                                    <div class="flex items-center justify-between px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Причина</p>
+                                            <p>Аппендицит</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Дата госпитализаци</p>
+                                            <p>14.03.2024</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Длительность</p>
+                                            <p>2 дня</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-4" class="flex flex-col gap-6">
+                                <div class="flex flex-col gap-4 w-full">
+                                    <p class="text-[18px] leading-[21.6px] font-medium">Назначения врачей</p>
+                                    <div class="flex items-center justify-between px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Наименование</p>
+                                            <p>Диетические указания</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Указания</p>
+                                            <p>Запрет на острую пищу</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Дата назначения</p>
+                                            <p>01.10.2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4 w-full">
+                                    <p class="text-[18px] leading-[21.6px] font-medium">Назначенные препараты</p>
+                                    <div class="flex items-center justify-between px-5 py-4 rounded-[12px] bg-[#F2F5F8]">
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Наименование</p>
+                                            <p>Дюспаталин</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Дозировка</p>
+                                            <p>1 т. утром и вечером</p>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="font-medium">Период назначения</p>
+                                            <p>01.04.2024 - 14.04.2024</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
