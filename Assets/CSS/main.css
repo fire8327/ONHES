@@ -668,6 +668,12 @@
   .h-\[10ppx\] {
     height: 10ppx;
   }
+  .h-\[21\] {
+    height: 21;
+  }
+  .h-\[21px\] {
+    height: 21px;
+  }
   .h-\[22px\] {
     height: 22px;
   }
@@ -715,6 +721,9 @@
   }
   .w-\[19\%\] {
     width: 19%;
+  }
+  .w-\[21px\] {
+    width: 21px;
   }
   .w-\[22px\] {
     width: 22px;
@@ -886,6 +895,9 @@
   .gap-\[93px\] {
     gap: 93px;
   }
+  .gap-\[101px\] {
+    gap: 101px;
+  }
   .gap-\[123px\] {
     gap: 123px;
   }
@@ -959,6 +971,9 @@
   }
   .bg-\[\#36C7B61A\] {
     background-color: #36C7B61A;
+  }
+  .bg-\[\#C1C1C1\] {
+    background-color: #C1C1C1;
   }
   .bg-\[\#E0E0E0\] {
     background-color: #E0E0E0;
@@ -1081,6 +1096,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
   .leading-\[13\.2px\] {
     --tw-leading: 13.2px;
     line-height: 13.2px;
@@ -1104,6 +1122,10 @@
   .leading-\[24px\] {
     --tw-leading: 24px;
     line-height: 24px;
+  }
+  .leading-\[26\.4px\] {
+    --tw-leading: 26.4px;
+    line-height: 26.4px;
   }
   .leading-\[36px\] {
     --tw-leading: 36px;
@@ -1139,6 +1161,10 @@
   }
   .shadow-\[0px_0px_20px_0px_\#0000001A\] {
     --tw-shadow: 0px 0px 20px 0px var(--tw-shadow-color, #0000001A);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0px_0px_20px_0px_\#00000014\] {
+    --tw-shadow: 0px 0px 20px 0px var(--tw-shadow-color, #00000014);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-\[0px_0px_20px_0px_\#00000017\] {
