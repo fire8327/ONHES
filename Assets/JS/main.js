@@ -12,15 +12,15 @@ $( function() {
 } );
 
 /* modals */
-for (let i = 1; i < 10; i++) {
+for (let i = 1; i < 11; i++) {
     $(`#openModal${i}`).click(() => {
-        $(`#modal${i}`).removeClass("-translate-y-[1000px]")
+        $(`#modal${i}`).removeClass("-translate-y-[2000px]")
         $(`#modal${i}`).addClass("top-1/2 -translate-y-1/2")
         $("#overlay").removeClass("hidden")
     })
 
     $(`#overlay, #closeModal${i}`).click(() => {
-        $(`#modal${i}`).addClass("-translate-y-[1000px]")
+        $(`#modal${i}`).addClass("-translate-y-[2000px]")
         $(`#modal${i}`).removeClass("top-1/2 -translate-y-1/2")
         $("#overlay").addClass("hidden")
     })
